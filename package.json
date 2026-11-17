@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-uk-company-due-diligence",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for UK company due diligence: Companies House profile, officers, PSCs, charges, risk flags and iXBRL financials, powered by an Apify Actor.",
 	"keywords": [
 		"n8n-community-node-package",

@@ -1,0 +1,62 @@
+{
+	"name": "n8n-nodes-uk-company-due-diligence",
+	"version": "0.1.0",
+	"description": "n8n community node for UK company due diligence: Companies House profile, officers, PSCs, charges, risk flags and iXBRL financials, powered by an Apify Actor.",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-nodes",
+		"n8n",
+		"apify",
+		"companies-house",
+		"due-diligence",
+		"kyb",
+		"uk-company"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Bachir Djoukbala",
+		"email": "bamodjak@gmail.com"
+	},
+	"engines": {
+		"node": ">=18.10"
+	},
+	"packageManager": "npm@10.8.2",
+	"scripts": {
+		"build": "n8n-node build",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/ApifyApi.credentials.js",
+			"dist/credentials/ApifyOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ApifyUkCompanyDueDiligence/ApifyUkCompanyDueDiligence.node.js"
+		]
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.56.4",
+		"@types/node": "^24.0.1",
+		"eslint": "^9.32.0",
+		"prettier": "^3.6.2",
+		"typescript": "5.9.2",
+		"release-it": "20.2.0"
+	},
+	"homepage": "https://apify.com/rejoicing_shanty/uk-company-due-diligence",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bamodjak/n8n-nodes-uk-company-due-diligence.git"
+	}
+}
